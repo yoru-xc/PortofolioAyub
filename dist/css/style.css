@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin-inline: auto;
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+body{
+    background-color: #141414;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar{
+    padding: 30px 0;
+    background-color: #141414;
+}
+
+.navbar-box{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-box .menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-box .menu li{
+    list-style-type: none;
+}
+.navbar-box .menu li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-box .menu li a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar-box .menu li a:hover{
+   background-color: #8a1717;
+   color: white;
+   font-weight: bold;
+}
+/* Navbar */
+
+/* Hero */
+.hero{
+    background-color: #141414;
+    color: #fff;
+    margin-block: 70px;
+}
+
+.hero-box{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero-box img {
+    width: 400px;
+}
+
+.hero-box h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.3;
+}
+
+.hero-box h1 span{
+    font-weight: bold;
+    color: #8A1717;
+}
+
+@media (max-width: 768px){
+    .hero-box h1{
+       font-size: 45px;
+    }
+}
+
+@media (max-width: 475px){
+    .hero-box h1{
+       font-size: 40px;
+    }
+}
+/* Hero */
+
+header svg{
+    margin-bottom: -10px;
+}
+
+/* Tentang */
+.tentang {
+   background-color: black;
+   padding-block: 50px;
+   color: #fff;
+}
+.tentang .container > h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.tentang-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+}
+.tentang-box img{
+    width: 300px;
+    padding: 10px 10px 0 10px;
+    background-color: #333333;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-inline: auto;
+    display: block;
+}
+.tentang-box p{
+    text-indent: 40px;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.tentang-box p span{
+   font-weight: bold;
+}
+.tentang-box a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.tentang-box a:hover{
+   background-color: #8a1717;
+   color: white;
+   font-weight: bold;
+}
+
+.box{
+    margin-top: 90px;
+}
+.medsos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1px;
+    margin-top: 30px;
+}
+
+.medsos a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.medsos-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.medsos-box:hover{
+    background-color: #8A1717;
+    color: white
+
+}
+.medsos-box img{
+    width: 30px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+@media (max-width:992px) {
+    .tentang-box {
+        grid-template-columns: 1fr;
+    }
+    .tentang-box a{
+       display: block;
+       width: fit-content;
+       margin-inline: auto;
+    }
+}
+/* Tentang */
